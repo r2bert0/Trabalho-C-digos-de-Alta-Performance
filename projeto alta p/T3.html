@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitedor de Caracteres no Feedback</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/781477d758.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</div>
+        <div class="slide-menu">
+            <nav>
+                <ul>
+                    
+                    <li><a class="hud"  href="index.html">Sobre Nós</a></li>
+                    <li><a class="hud"  href="T2.html">Cards</a></li>
+                    <li><a class="hud"  href="T3.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+        <input type="checkbox" class="checkbox" id="cb"/>
+        <label class="label" for="cb">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </header>
+    <main>
+        <form>
+            <label class="labeld" for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label class="labeld" for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label class="labeld" for="mensagem">Feedback:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" maxlength="200" required></textarea> <!-- Definindo o limite de 200 caracteres -->
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="scripts.js"></script><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>Email para contato: Roberto87@gmail.com</footer>
+</body>
+</html>
+   
+</main>
